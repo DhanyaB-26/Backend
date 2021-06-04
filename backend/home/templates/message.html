@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+    <form action="" method="POST">
+        {{form.hidden_tag()}}
+        <fieldset>
+            <legend>Details of the Body</legend>
+            <p>
+                1.&nbsp;
+                {{form.no_of_bodies.label}}&nbsp;&nbsp;&nbsp;
+                {{form.no_of_bodies(size=32)}}
+            </p>
+            <p>
+                2.&nbsp;
+                {{form.street_name.label}}&nbsp;&nbsp;&nbsp;
+                {{form.street_name(size=40)}}
+            </p>
+            <p>
+                3.&nbsp;
+                {{form.area.label}}&nbsp;&nbsp;&nbsp;
+                {{form.area(size=40)}}
+            </p>
+            <p>
+                4.&nbsp;
+                {{form.landmark.label}}&nbsp;&nbsp;&nbsp;
+                {{form.landmark(size=50)}}
+            </p>
+            <p>
+                5.&nbsp;
+                {{form.city.label}}&nbsp;&nbsp;&nbsp;
+                {{form.city(size=32)}}
+            </p>
+            <p>
+                6.&nbsp;
+                {{form.pincode.label}}&nbsp;&nbsp;&nbsp;
+                {{form.pincode(size=32)}}
+            </p>
+            <p>
+                {{form.submit}}
+            </p>
+        </fieldset>
+    </form>
+{% endblock content %}

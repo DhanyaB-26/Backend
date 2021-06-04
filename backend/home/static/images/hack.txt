@@ -1,0 +1,44 @@
+H@CIT
+
+1. reason of the project
+2. tech stack
+3. menus:
+	register 
+	1. individual
+		1. name
+		2. aadhar number
+		3. email
+		4. phone number
+	2. organisation
+		1. registered proof
+		2. address
+		3. org email
+		4. contact details
+		5. organisation head details
+		6. name
+
+	log in:
+	1. induvidual
+		1. email
+		2. aadhar number
+		
+	2. organisation 
+		1. name
+		2. email
+
+	feed: 
+	1. All posts with random
+	2. Feeds like instagram
+	
+	Post area:
+	1. Photo (optional)
+	2. Location 
+	3. Title
+	4. Landmark : needed
+
+
+
+		
+	
+	
+	

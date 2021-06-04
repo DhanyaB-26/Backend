@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styling.css')}}"
+    <form action="" method="POST">
+        {{form.hidden_tag()}}
+            <p class="form1">
+                1. &nbsp;
+                {{form.email.label}}&nbsp;&nbsp;&nbsp;
+                {{form.email(size=70)}}
+            </p>
+            <p>
+                2.&nbsp;
+                {{form.contact.label}}&nbsp;&nbsp;&nbsp;
+                {{form.contact(size=32)}}
+            </p>
+            <p>
+                3.&nbsp;
+                {{form.passw.label}}&nbsp;&nbsp;&nbsp;
+                {{form.passw(size=32)}}
+            </p>
+            <p>
+                {{form.submit}}
+            </p>
+    </form>
+{% endblock content %}

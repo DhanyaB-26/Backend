@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+    <form action="" method="POST">
+        {{form.hidden_tag()}}
+        <fieldset>
+            <legend>LOGIN AS INDIVIDUAL</legend>
+            {{form.hidden_tag()}}
+            <p>
+                1. &nbsp;
+                {{form.email.label}}&nbsp;&nbsp;&nbsp;
+                {{form.email(size=70)}}
+            </p>
+            <p>
+                2. &nbsp;
+                {{form.password.label}}&nbsp;&nbsp;&nbsp;
+                {{form.password(size=70)}}
+            </p>
+            <p>
+                3. &nbsp;
+                {{form.aadhar.label}}&nbsp;&nbsp;&nbsp;
+                {{form.aadhar(size=32)}}
+            </p>
+            <p>
+                {{form.submit}}
+            </p>
+        </fieldset>
+    </form>
+{% endblock content %}
